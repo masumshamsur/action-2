@@ -1,0 +1,23 @@
+name: My first multi-line command workflow
+
+on: push
+
+jobs:
+  first_job:
+     runs-on: ubuntu-latest
+     steps:
+     - name: Checkout Repo
+       uses: actions/checkout@v4
+
+     - name: list and read file
+       run: |
+            echo "My first github actions job"
+            ls ltra
+            cat README.md
+    #  - name: generate ASCII artwork
+    #    run: cowsay -f dragon "Run for cover, I am a DRAGON----RAWR" >> dragon.txt
+    #  - name: List files
+    #    run: ls 
+
+    #  - name: Read file
+    #    run: cat README.md 
