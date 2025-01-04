@@ -13,13 +13,13 @@ jobs:
        run: sudo apt-get install cowsay -y
   
      - name: Exicute Cowsey command
-       run: cowsay -f dragon "Run for cover, I am a DRAGON----RAWR" >> dragon.txt
+       run: cowsay -f bird "Run for cover, I am a bird----RAWR" >> bird.txt
 
      - name: Test file exists
-       run: grep -i "dragon" dragon.txt
+       run: grep -i "bird" bird.txt
 
      - name: TRead file
-       run: cat dragon.txt  
+       run: cat bird.txt  
 
      - name: List repo files
        run: ls -ltra
