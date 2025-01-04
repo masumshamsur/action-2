@@ -20,8 +20,8 @@ jobs:
 
      - name: TRead file
        run: cat dragon.txt  
-       
-     - name: List files
+
+     - name: List repo files
        run: ls -ltra
 
     #  - name: Read file
